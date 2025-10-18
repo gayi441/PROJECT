@@ -27,14 +27,15 @@ jobs:
         distribution: 'temurin'
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: chmod +x gradlew   # ✅ FIXED LINE
 
     - name: Build with Gradle
       run: ./gradlew build
 
-
-    - name: list build output
+    - name: List build output
       run: ls -l build/libs
+
+
     - name: Build and push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
