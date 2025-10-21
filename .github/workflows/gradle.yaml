@@ -41,5 +41,5 @@ jobs:
       with:
          image: gayathri/gradle-java-app
          registry: docker.io
-         username: ${{secrets.username }}
-         password: ${{secrets.password }}
+         username: ${{secrets.username1 }}
+         password: ${{secrets.password1 }}
